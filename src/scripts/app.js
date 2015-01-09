@@ -23437,7 +23437,9 @@ var Message = React.createClass({displayName: "Message",
 		return (
 			/* jshint ignore:start */
 			React.createElement("div", null, "this is message with ID:", 
-				this.props.params.id
+				this.props.params.id, " // this does not require mixins" + ' ' +
+				"or",  
+				this.getParams().id, " // this requires mixins"
 			)
 			/* jshint ignore:end */
 		);

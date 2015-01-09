@@ -8,7 +8,9 @@ var Message = React.createClass({
 		return (
 			/* jshint ignore:start */
 			<div>this is message with ID:
-				{this.props.params.id}
+				{this.props.params.id} // this does not require mixins
+				or 
+				{this.getParams().id} // this requires mixins
 			</div>
 			/* jshint ignore:end */
 		);
