@@ -7,10 +7,10 @@ var Message = React.createClass({
 	render: function() {
 		return (
 			/* jshint ignore:start */
-			<div>this is message with ID:
-				{this.props.params.id} // this does not require mixins
-				or 
-				{this.getParams().id} // this requires mixins
+			<div>this is message with ID: <br/>
+				{this.props.params.id} /* this does not require mixins */ <br/>
+				or <br/>
+				{this.getParams().id} /* this requires mixins */
 			</div>
 			/* jshint ignore:end */
 		);
